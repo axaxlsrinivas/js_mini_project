@@ -1,0 +1,73 @@
+@import url("colors.css");
+
+body {
+    background: var(--primary-bg);
+    font-family: var(--primary-font);
+}
+
+.auth-container {
+    max-width: 350px;
+    margin: 100px auto;
+    background: var(--container-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--container-shadow);
+    text-align: center;
+}
+
+input[type="text"], input[type="password"] {
+    width: 90%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 0.5rem;
+    background: var(--button-bg);
+    color: var(--button-color);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background: var(--button-hover-bg);
+}
+
+#forgot-password-btn {
+    background: var(--button-forgot-bg);
+}
+#register-btn {
+    background: var(--button-register-bg);
+}
+#google-signin-btn {
+    background: var(--button-google-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+#auth-message {
+    color: var(--error-color);
+    margin-top: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-bg: #181a1b;
+        --container-bg: #23272a;
+        --button-bg: #005fa3;
+        --button-hover-bg: #0078d7;
+        --button-color: #fff;
+        --input-border: #444;
+        --container-shadow: 0 2px 8px rgba(0,0,0,0.5);
+        --error-color: #ff6b6b;
+        --success-color: #51fa7b;
+    }
+}

@@ -1,0 +1,15 @@
+:root {
+    --primary-bg: #f0f4f8;
+    --container-bg: #fff;
+    --primary-font: Arial, sans-serif;
+    --container-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    --input-border: #ccc;
+    --button-bg: #0078d7;
+    --button-hover-bg: #005fa3;
+    --button-forgot-bg: #f4b400;
+    --button-register-bg: #34a853;
+    --button-google-bg: #4285f4;
+    --button-color: #fff;
+    --error-color: red;
+    --success-color: green;
+}

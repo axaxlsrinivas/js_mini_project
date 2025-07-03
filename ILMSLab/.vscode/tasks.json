@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Run Medical Equipment Inventory App",
+			"command": "C:/Users/Hema kumar/OneDrive/Desktop/Git/ILMSLab/.venv/Scripts/python.exe main.py",
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}

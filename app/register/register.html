@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/auth.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <input type="text" id="username" placeholder="Username" required />
+            <input type="email" id="email" placeholder="Email (e.g. user@example.com)" required />
+            <input type="password" id="password" placeholder="Password" required />
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+            <button type="submit" style="background-color:#4CAF50;color:white;">Register</button>
+        </form>
+        <button id="login-btn" type="button" onclick="window.location.href='../auth/auth.html'" style="background-color:#2196F3;color:white;margin-top:10px;">Already have an account? Login</button>
+        <p id="registerMessage"></p>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>

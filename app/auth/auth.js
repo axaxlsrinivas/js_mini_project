@@ -35,7 +35,13 @@ if (forgotBtn) {
 const registerBtn = document.getElementById('register-btn');
 if (registerBtn) {
     registerBtn.addEventListener('click', function() {
-        alert('Registration functionality is not implemented yet.');
+        // Navigate parent iframe to forgot password page using absolute path
+        if (window.parent && window.parent !== window) {
+            window.parent.document.getElementById('app-frame').src = '/app/register/register.html';
+        } else {
+            // Fallback: open in current window if not in iframe
+            window.location.href = '/app/register/register.html';
+        }
     });
 }
 
